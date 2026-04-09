@@ -1,0 +1,260 @@
+---
+---
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-content">
+      <!-- Text column -->
+      <div class="hero-text">
+        <!-- Tag pills -->
+        <div class="tag-pills">
+          <span class="tag-pill tag-pill--purple">
+            <img src="/images/community-icon.svg" class="tag-pill__icon" aria-hidden="true" />
+            Community
+          </span>
+          <span class="tag-pill tag-pill--orange">
+            <img src="/images/panels-icon.svg" class="tag-pill__icon" aria-hidden="true" />
+            Panels
+          </span>
+          <span class="tag-pill tag-pill--green">
+            <img src="/images/network-icon.svg" class="tag-pill__icon" aria-hidden="true" />
+            Network
+          </span>
+          <span class="tag-pill tag-pill--blue">
+            <img src="/images/mentorship-icon.svg" class="tag-pill__icon" aria-hidden="true" />
+            Mentorship
+          </span>
+        </div>
+
+        <!-- Headline + body + CTA -->
+        <div class="hero-text-group">
+          <div class="hero-titles">
+            <h1 class="hero-headline">Bridging Intelligence&nbsp;&amp; Inclusion.</h1>
+            <p class="hero-subheadline">
+              Women in AI Forum brings together researchers, practitioners, and advocates to build an equitable AI ecosystem. Our members contribute to policy, research, and applied innovation — and to each other.
+            </p>
+          </div>
+
+          <div class="hero-cta-row">
+            <a href="#join" class="btn btn--primary btn--md">Join the Forum</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Hero image -->
+    <div class="hero-image-frame">
+      <img src="/images/hero.jpg" alt="Women in AI Forum event" width="776" height="452" />
+    </div>
+  </div>
+</section>
+
+<style>
+  /* ---- Outer section ---- */
+  .hero {
+    padding: 80px 40px 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* ---- Main inner wrapper (max 1000px) ---- */
+  .hero-inner {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+  }
+
+  /* ---- Content + stats wrapper (1000px, padded to 720px centre) ---- */
+  .hero-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    padding: 0 32px;
+  }
+
+  /* ---- Text area (720px centred within padded container) ---- */
+  .hero-text {
+    max-width: 720px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  /* ---- Headline group ---- */
+  .hero-text-group {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .hero-titles {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .hero-headline {
+    font-family: var(--font-heading);
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 1.15;
+    letter-spacing: -0.05em;
+    color: var(--color-header);
+  }
+
+  .hero-subheadline {
+    font-family: var(--font-body);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--color-text);
+    max-width: 650px;
+  }
+
+  /* ---- CTA row ---- */
+  .hero-cta-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  /* ---- Stats row ---- */
+  .hero-stats {
+    max-width: 720px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 48px;
+  }
+
+  .hero-stat {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    min-width: 0;
+  }
+
+  .hero-stat__number {
+    font-family: var(--font-heading);
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1.15;
+    letter-spacing: -0.05em;
+    color: var(--color-header);
+  }
+
+  .hero-stat__label {
+    font-family: var(--font-ui);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.107;
+    color: var(--color-tag);
+  }
+
+  /* ---- Hero image ---- */
+  .hero-image-frame {
+    width: 100%;
+    max-width: 784px;
+    margin: 0 auto;
+    background-color: var(--color-white);
+    border-radius: var(--radius-image);
+    padding: 4px;
+  }
+
+  .hero-image-frame img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: var(--radius-image-inner);
+    object-fit: cover;
+  }
+
+  /* Placeholder — remove once hero image is added */
+  .hero-image-placeholder {
+    width: 100%;
+    aspect-ratio: 776 / 452;
+    background-color: var(--color-10);
+    border-radius: var(--radius-image-inner);
+  }
+
+  /* =========================================
+     MOBILE
+     ========================================= */
+  @media (max-width: 768px) {
+    .hero {
+      padding: 40px 20px 0;
+    }
+
+    .hero-inner {
+      gap: 60px;
+    }
+
+    .hero-content {
+      padding: 0 12px;
+      gap: 60px;
+    }
+
+    .hero-text {
+      max-width: 100%;
+      gap: 40px;
+    }
+
+    .hero-headline {
+      font-size: 42px;
+      line-height: 1.15;
+      letter-spacing: -0.05em;
+    }
+
+    .hero-subheadline {
+      font-size: 16px;
+    }
+
+    .hero-stats {
+      max-width: 322px;
+      gap: 16px;
+    }
+
+    .hero-stat__number {
+      font-size: 28px;
+    }
+
+    .hero-image-frame {
+      max-width: 100%;
+    }
+  }
+
+  /* ---- Cycling tag pills ---- */
+  .tag-pills {
+    position: relative;
+    height: 28px;
+    display: block;
+  }
+
+  .tag-pill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    animation: pill-cycle 10s infinite;
+  }
+
+  .tag-pill:nth-child(1) { animation-delay: 0s; }
+  .tag-pill:nth-child(2) { animation-delay: 2.5s; }
+  .tag-pill:nth-child(3) { animation-delay: 5s; }
+  .tag-pill:nth-child(4) { animation-delay: 7.5s; }
+
+  @keyframes pill-cycle {
+    0%       { opacity: 0; transform: translateY(5px); }
+    5%       { opacity: 1; transform: translateY(0); }
+    20%      { opacity: 1; transform: translateY(0); }
+    25%      { opacity: 0; transform: translateY(-5px); }
+    100%     { opacity: 0; transform: translateY(-5px); }
+  }
+</style>
