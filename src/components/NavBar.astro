@@ -1,0 +1,104 @@
+---
+---
+
+<nav class="navbar">
+  <div class="navbar-inner">
+    <div class="navbar-content">
+      <a href="/" class="navbar-logo" aria-label="Women in AI Forum home">
+        <img src="/images/logo.svg" alt="Women in AI Forum" width="140" height="40" />
+      </a>
+
+      <div class="navbar-links">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#join" class="btn btn--primary btn--sm">Join the Forum</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<style>
+  .navbar {
+    height: 100px;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-bg);
+  }
+
+  .navbar-inner {
+    width: 100%;
+    max-width: 1432px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 12px;
+  }
+
+  .navbar-content {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    gap: 28px;
+  }
+
+  .navbar-logo {
+    display: flex;
+    align-items: flex-end;
+    padding-top: 8px;
+    flex-shrink: 0;
+  }
+
+  .navbar-logo img {
+    width: 140px;
+    height: 40px;
+    object-fit: contain;
+    object-position: left;
+  }
+
+  .navbar-links {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .nav-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 8px;
+    border-radius: var(--radius-nav-link);
+    font-family: var(--font-ui);
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--color-header);
+    line-height: 1.107;
+    transition: background-color 0.15s ease;
+  }
+
+  .nav-link:hover {
+    background-color: var(--color-5);
+  }
+
+  @media (max-width: 768px) {
+    .navbar {
+      height: 100px;
+      padding: 0 20px;
+    }
+
+    .navbar-inner {
+      padding: 0 12px;
+    }
+
+    .navbar-logo img {
+      width: 112px;
+      height: 32px;
+    }
+
+    .nav-link {
+      display: none;
+    }
+  }
+</style>

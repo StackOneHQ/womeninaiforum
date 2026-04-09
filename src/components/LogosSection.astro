@@ -1,0 +1,85 @@
+---
+---
+
+<section class="logos">
+  <div class="logos-inner">
+    <p class="logos-label">Community members from leading AI companies, including:</p>
+    <div class="logos-grid-wrapper">
+      <div class="logos-grid">
+        <img src="/images/customer-logo-1.svg" alt="Partner company" class="logo-img" />
+        <img src="/images/customer-logo-2.svg" alt="Partner company" class="logo-img" />
+        <img src="/images/customer-logo-3.svg" alt="Partner company" class="logo-img" />
+        <img src="/images/customer-logo-4.svg" alt="Partner company" class="logo-img" />
+        <img src="/images/customer-logo-5.svg" alt="Partner company" class="logo-img" />
+        <img src="/images/customer-logo-6.svg" alt="Partner company" class="logo-img" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .logos {
+    padding: 80px 40px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .logos-inner {
+    width: 100%;
+    max-width: 1432px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .logos-label {
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--color-tag);
+    width: 100%;
+    text-align: center;
+  }
+
+  .logos-grid-wrapper {
+    width: 100%;
+    max-width: 1080px;
+  }
+
+  .logos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 48px 64px;
+  }
+
+  .logo-img {
+    width: auto;
+    height: auto;
+    max-width: 100px;
+    max-height: 24px;
+    display: block;
+  }
+
+  @media (max-width: 768px) {
+    .logos {
+      padding: 60px 20px;
+    }
+
+    .logos-inner {
+      gap: 40px;
+    }
+
+    .logos-grid {
+      gap: 32px 40px;
+    }
+
+    .logo-img {
+      max-width: 80px;
+      max-height: 20px;
+    }
+  }
+</style>

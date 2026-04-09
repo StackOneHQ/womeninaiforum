@@ -1,0 +1,310 @@
+/* =========================================
+   FONT FACES
+   ========================================= */
+
+@font-face {
+  font-family: 'Px Grotesk';
+  src: url('/fonts/PxGrotesk-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Px Grotesk';
+  src: url('/fonts/PxGrotesk-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* =========================================
+   DESIGN TOKENS
+   ========================================= */
+
+:root {
+  /* Colors */
+  --color-bg: #f4f2f0;
+  --color-surface: #fefefd;
+  --color-header: #222121;
+  --color-text: #4c4b4b;
+  --color-tag: #7a7a7a;
+  --color-placeholder: #a19f9e;
+  --color-input-bg: #e0dedc;
+  --color-white: #ffffff;
+  --color-error: #c43e3e;
+  --color-primary: #00af66;
+
+  /* Product colour pairs */
+  --color-purple-dark: #4d4eba;
+  --color-purple-light: #b6b8ff;
+  --color-orange-dark: #96580a;
+  --color-orange-light: #e1bf92;
+  --color-green-dark: #047b43;
+  --color-green-light: #76d6ae;
+  --color-blue-dark: #0c58ae;
+  --color-blue-light: #92b2ff;
+
+  /* Opacity scale */
+  --color-5: #ebe9e7;
+  --color-10: #e0dedc;
+  --color-15: #d5d4d2;
+  --color-20: #cbc9c7;
+  --color-30: #b6b4b3;
+  --color-40: #a19f9e;
+
+  /* Typography */
+  --font-heading: 'IBM Plex Serif', Georgia, serif;
+  --font-ui: 'Px Grotesk', system-ui, sans-serif;
+  --font-body: 'Geist', system-ui, sans-serif;
+
+  /* Border radius */
+  --radius-pill: 50px;
+  --radius-card: 28px;
+  --radius-card-inner: 24px;
+  --radius-button-sm: 12px;
+  --radius-button: 14px;
+  --radius-input: 14px;
+  --radius-nav-link: 10px;
+  --radius-image: 24px;
+  --radius-image-inner: 20px;
+}
+
+/* =========================================
+   RESET
+   ========================================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font: inherit;
+}
+
+input,
+textarea {
+  font: inherit;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+/* =========================================
+   LAYOUT UTILITIES
+   ========================================= */
+
+.section-inner {
+  width: 100%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-inner--720 {
+  width: 100%;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* =========================================
+   TAG PILLS
+   ========================================= */
+
+.tag-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.tag-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px 4px 8px;
+  height: 28px;
+  border-radius: var(--radius-pill);
+  font-family: var(--font-ui);
+  font-size: 13px;
+  line-height: 1.107;
+  font-weight: 400;
+}
+
+.tag-pill__icon {
+  width: 13px;
+  height: 13px;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+.tag-pill--purple {
+  background-color: var(--color-purple-light);
+  color: var(--color-purple-dark);
+}
+
+.tag-pill--orange {
+  background-color: var(--color-orange-light);
+  color: var(--color-orange-dark);
+}
+
+.tag-pill--green {
+  background-color: var(--color-green-light);
+  color: var(--color-green-dark);
+}
+
+.tag-pill--blue {
+  background-color: var(--color-blue-light);
+  color: var(--color-blue-dark);
+}
+
+/* =========================================
+   BUTTONS
+   ========================================= */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border-radius: var(--radius-button);
+  font-family: var(--font-ui);
+  font-weight: 400;
+  white-space: nowrap;
+  transition: opacity 0.15s ease;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+.btn--primary {
+  background-color: var(--color-header);
+  color: var(--color-bg);
+}
+
+.btn--sm {
+  padding: 6px 10px;
+  font-size: 15px;
+  line-height: 1.107;
+  border-radius: var(--radius-button-sm);
+  height: 32px;
+}
+
+.btn--md {
+  padding: 6px 12px;
+  font-size: 17px;
+  line-height: 1.107;
+  height: 36px;
+}
+
+.btn--lg {
+  padding: 6px 12px;
+  font-size: 17px;
+  line-height: 1.107;
+  height: 42px;
+  width: 100%;
+}
+
+.btn--text {
+  background: none;
+  color: var(--color-header);
+  font-size: 17px;
+  line-height: 1.107;
+  padding: 0;
+  gap: 6px;
+  height: auto;
+}
+
+.btn--text:hover {
+  opacity: 0.7;
+}
+
+/* =========================================
+   FORM INPUTS
+   ========================================= */
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-label {
+  font-family: var(--font-ui);
+  font-size: 13px;
+  line-height: 1.107;
+  color: var(--color-text);
+  padding: 0 12px;
+}
+
+.form-input {
+  width: 100%;
+  height: 42px;
+  padding: 12px 16px;
+  background-color: var(--color-input-bg);
+  border-radius: var(--radius-input);
+  font-family: var(--font-ui);
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--color-header);
+}
+
+.form-input::placeholder {
+  color: var(--color-placeholder);
+}
+
+.form-input:focus {
+  outline: 2px solid var(--color-header);
+  outline-offset: -2px;
+}
+
+.form-error {
+  display: none;
+  align-items: center;
+  gap: 6px;
+  padding: 0 8px;
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: var(--color-error);
+}
+
+.form-error.is-visible {
+  display: flex;
+}
+
+.form-input.is-error {
+  outline: 2px solid var(--color-error);
+  outline-offset: -2px;
+}

@@ -1,0 +1,171 @@
+---
+---
+
+<footer class="footer">
+  <div class="footer-inner">
+    <!-- Top row: logo + nav + CTA -->
+    <div class="footer-top">
+      <a href="/" class="footer-logo" aria-label="Women in AI Forum home">
+        <img src="/images/logo.svg" alt="Women in AI Forum" width="112" height="32" />
+      </a>
+
+      <div class="footer-nav">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#join" class="btn btn--primary btn--sm">Join the Forum</a>
+      </div>
+    </div>
+
+    <!-- Bottom row: copyright + supported by -->
+    <div class="footer-bottom">
+      <p class="footer-copyright">© 2026 Women In AI Forum. All rights reserved.</p>
+
+      <div class="footer-supported">
+        <span class="footer-supported-label">Supported by</span>
+        <a href="https://stackone.com" target="_blank" rel="noopener noreferrer" aria-label="StackOne">
+          <img
+            src="/images/stackone-logo.svg"
+            alt="StackOne"
+            width="126"
+            height="16"
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    padding: 0 40px;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid var(--color-5);
+  }
+
+  .footer-inner {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+    padding: 120px 0;
+  }
+
+  /* ---- Top row ---- */
+  .footer-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .footer-logo {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+  }
+
+  .footer-logo img {
+    width: 112px;
+    height: 32px;
+    object-fit: contain;
+    object-position: left;
+  }
+
+  .footer-nav {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .nav-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 8px;
+    border-radius: var(--radius-nav-link);
+    font-family: var(--font-ui);
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--color-header);
+    line-height: 1.107;
+    transition: background-color 0.15s ease;
+  }
+
+  .nav-link:hover {
+    background-color: var(--color-5);
+  }
+
+  /* ---- Bottom row ---- */
+  .footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+  }
+
+  .footer-copyright {
+    font-family: var(--font-body);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--color-tag);
+  }
+
+  .footer-supported {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+  }
+
+  .footer-supported-label {
+    font-family: var(--font-ui);
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--color-tag);
+    white-space: nowrap;
+  }
+
+  .footer-supported a {
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-supported img {
+    width: 126px;
+    height: 16px;
+    object-fit: contain;
+  }
+
+  /* =========================================
+     MOBILE
+     ========================================= */
+  @media (max-width: 768px) {
+    .footer {
+      padding: 0 20px;
+    }
+
+    .footer-inner {
+      gap: 40px;
+      padding: 60px 12px;
+    }
+
+    .footer-top {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .nav-link {
+      display: none;
+    }
+
+    .footer-bottom {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 40px;
+    }
+  }
+</style>
