@@ -1,0 +1,272 @@
+---
+---
+
+<section class="cta" id="join">
+  <div class="cta-inner">
+    <!-- Left column: copy + tags -->
+    <div class="cta-copy">
+      <div class="cta-copy-text">
+        <h2 class="cta-heading">Join the Forum</h2>
+        <p class="cta-body">
+          <!-- TODO: Update this placeholder copy with Women in AI Forum description -->
+          All the tools you need to build and scale AI agent integrations, with best-in-class security &amp; privacy.
+        </p>
+      </div>
+
+      <div class="tag-pills">
+        <span class="tag-pill tag-pill--purple">
+          <img src="/images/community-icon.svg" class="tag-pill__icon" aria-hidden="true" />
+          Community
+        </span>
+        <span class="tag-pill tag-pill--orange">
+          <img src="/images/panels-icon.svg" class="tag-pill__icon" aria-hidden="true" />
+          Panels
+        </span>
+        <span class="tag-pill tag-pill--green">
+          <img src="/images/network-icon.svg" class="tag-pill__icon" aria-hidden="true" />
+          Network
+        </span>
+        <span class="tag-pill tag-pill--blue">
+          <img src="/images/mentorship-icon.svg" class="tag-pill__icon" aria-hidden="true" />
+          Mentorship
+        </span>
+      </div>
+    </div>
+
+    <!-- Right column: form -->
+    <div class="cta-form-wrap">
+      <form class="cta-form" id="join-form" name="join-forum" method="POST" novalidate>
+        <!-- Name row -->
+        <div class="cta-name-row">
+          <div class="form-group">
+            <label class="form-label" for="first-name">First Name</label>
+            <input
+              class="form-input"
+              type="text"
+              id="first-name"
+              name="first_name"
+              placeholder="Emily"
+              autocomplete="given-name"
+              required
+            />
+            <span class="form-error" id="error-first-name" aria-live="polite">
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><circle cx="6" cy="6" r="5.5" stroke="#c43e3e"/><path d="M6 3.5V6.5" stroke="#c43e3e" stroke-width="1.2" stroke-linecap="round"/><circle cx="6" cy="8.5" r="0.6" fill="#c43e3e"/></svg>
+              Please enter your first name.
+            </span>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="last-name">Last Name</label>
+            <input
+              class="form-input"
+              type="text"
+              id="last-name"
+              name="last_name"
+              placeholder="Brown"
+              autocomplete="family-name"
+              required
+            />
+            <span class="form-error" id="error-last-name" aria-live="polite">
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><circle cx="6" cy="6" r="5.5" stroke="#c43e3e"/><path d="M6 3.5V6.5" stroke="#c43e3e" stroke-width="1.2" stroke-linecap="round"/><circle cx="6" cy="8.5" r="0.6" fill="#c43e3e"/></svg>
+              Please enter your last name.
+            </span>
+          </div>
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+          <label class="form-label" for="email">Email Address</label>
+          <input
+            class="form-input"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="emily@google.com"
+            autocomplete="email"
+            required
+          />
+          <span class="form-error" id="error-email" aria-live="polite">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><circle cx="6" cy="6" r="5.5" stroke="#c43e3e"/><path d="M6 3.5V6.5" stroke="#c43e3e" stroke-width="1.2" stroke-linecap="round"/><circle cx="6" cy="8.5" r="0.6" fill="#c43e3e"/></svg>
+            Please enter a valid email address.
+          </span>
+        </div>
+
+        <!-- Company -->
+        <div class="form-group">
+          <label class="form-label" for="company">Company</label>
+          <input
+            class="form-input"
+            type="text"
+            id="company"
+            name="company"
+            placeholder="Google"
+            autocomplete="organization"
+          />
+        </div>
+
+        <!-- LinkedIn -->
+        <div class="form-group">
+          <label class="form-label" for="linkedin">LinkedIn (Optional)</label>
+          <input
+            class="form-input"
+            type="url"
+            id="linkedin"
+            name="linkedin"
+            placeholder="www.linkedin.com/emily-brown"
+            autocomplete="url"
+          />
+        </div>
+
+        <!-- Submit -->
+        <button type="submit" class="btn btn--primary btn--lg">Join the Forum</button>
+      </form>
+
+      <p class="cta-helper">Join 500+ other community members shaping the future of AI.</p>
+    </div>
+  </div>
+</section>
+
+<style>
+  .cta {
+    padding: 120px 40px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .cta-inner {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    justify-content: space-between;
+  }
+
+  /* ---- Left copy column ---- */
+  .cta-copy {
+    width: 420px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 80px 0;
+    justify-content: space-between;
+    align-self: stretch;
+  }
+
+  .cta-copy-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .cta-heading {
+    font-family: var(--font-heading);
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 1.15;
+    letter-spacing: -0.05em;
+    color: var(--color-header);
+  }
+
+  .cta-body {
+    font-family: var(--font-body);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--color-text);
+  }
+
+  /* ---- Right form column ---- */
+  .cta-form-wrap {
+    width: 380px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+  }
+
+  .cta-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .cta-name-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+
+  .cta-helper {
+    font-family: var(--font-body);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--color-tag);
+    text-align: center;
+    padding: 0 8px;
+  }
+
+  /* =========================================
+     MOBILE
+     ========================================= */
+  @media (max-width: 768px) {
+    .cta {
+      padding: 60px 20px;
+    }
+
+    .cta-inner {
+      flex-direction: column;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .cta-copy {
+      width: 100%;
+      max-width: 346px;
+      padding: 0 12px;
+      align-self: auto;
+    }
+
+    .cta-form-wrap {
+      width: 100%;
+      max-width: 346px;
+    }
+
+    .cta-form {
+      gap: 28px;
+    }
+  }
+</style>
+
+<script>
+  const form = document.getElementById('join-form') as HTMLFormElement;
+
+  const fields = [
+    { id: 'first-name', errorId: 'error-first-name', validate: (v: string) => v.trim().length > 0 },
+    { id: 'last-name',  errorId: 'error-last-name',  validate: (v: string) => v.trim().length > 0 },
+    { id: 'email',      errorId: 'error-email',       validate: (v: string) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim()) },
+  ];
+
+  function validateField(field: typeof fields[0]): boolean {
+    const input = document.getElementById(field.id) as HTMLInputElement;
+    const error = document.getElementById(field.errorId) as HTMLElement;
+    const valid = field.validate(input.value);
+    input.classList.toggle('is-error', !valid);
+    error.classList.toggle('is-visible', !valid);
+    return valid;
+  }
+
+  // Clear error on input
+  fields.forEach(field => {
+    const input = document.getElementById(field.id) as HTMLInputElement;
+    input.addEventListener('input', () => validateField(field));
+  });
+
+  form.addEventListener('submit', (e) => {
+    const allValid = fields.map(validateField).every(Boolean);
+    if (!allValid) e.preventDefault();
+  });
+</script>

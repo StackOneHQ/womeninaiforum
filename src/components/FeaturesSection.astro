@@ -1,0 +1,187 @@
+---
+---
+
+<section class="features" id="about">
+  <div class="features-inner">
+    <!-- Section heading -->
+    <div class="features-heading-wrap">
+      <h2 class="features-heading">What to expect from the community...</h2>
+    </div>
+
+    <!-- 2×2 card grid -->
+    <div class="features-grid">
+      <div class="feature-card feature-card--purple">
+        <div class="feature-card__inner">
+          <img src="/images/community-icon.svg" class="feature-card__icon" aria-hidden="true" />
+          <p class="feature-card__text">A space for the conversations that don't always get a platform</p>
+        </div>
+      </div>
+
+      <div class="feature-card feature-card--orange">
+        <div class="feature-card__inner">
+          <img src="/images/panels-icon.svg" class="feature-card__icon" aria-hidden="true" />
+          <p class="feature-card__text">Panel discussions with leading female voices in AI</p>
+        </div>
+      </div>
+
+      <div class="feature-card feature-card--green">
+        <div class="feature-card__inner">
+          <img src="/images/network-icon.svg" class="feature-card__icon" aria-hidden="true" />
+          <p class="feature-card__text">Networking events</p>
+        </div>
+      </div>
+
+      <div class="feature-card feature-card--blue">
+        <div class="feature-card__inner">
+          <img src="/images/mentorship-icon.svg" class="feature-card__icon" aria-hidden="true" />
+          <p class="feature-card__text">Mentoring partnership opportunities</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quote -->
+    <p class="features-quote">
+      "Have your say in what we discuss - event topics are shaped by the community"
+    </p>
+  </div>
+</section>
+
+<style>
+  .features {
+    padding: 120px 40px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .features-inner {
+    width: 100%;
+    max-width: 720px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  /* ---- Heading ---- */
+  .features-heading-wrap {
+    width: 100%;
+    padding: 0 32px;
+  }
+
+  .features-heading {
+    font-family: var(--font-heading);
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 1.15;
+    letter-spacing: -0.05em;
+    color: var(--color-header);
+    max-width: 656px;
+  }
+
+  /* ---- Card grid ---- */
+  .features-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .feature-card {
+    border-radius: var(--radius-card);
+    padding: 4px;
+    height: 260px;
+  }
+
+  .feature-card__inner {
+    width: 100%;
+    height: 100%;
+    border-radius: var(--radius-card-inner);
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .feature-card__icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+  }
+
+  .feature-card__text {
+    font-family: var(--font-heading);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.15;
+    letter-spacing: -0.05em;
+  }
+
+  /* Card colour variants */
+  .feature-card--purple {
+    background-color: var(--color-purple-light);
+  }
+  .feature-card--purple .feature-card__text {
+    color: var(--color-purple-dark);
+  }
+
+  .feature-card--orange {
+    background-color: var(--color-orange-light);
+  }
+  .feature-card--orange .feature-card__text {
+    color: var(--color-orange-dark);
+  }
+
+  .feature-card--green {
+    background-color: var(--color-green-light);
+  }
+  .feature-card--green .feature-card__text {
+    color: var(--color-green-dark);
+  }
+
+  .feature-card--blue {
+    background-color: var(--color-blue-light);
+  }
+  .feature-card--blue .feature-card__text {
+    color: var(--color-blue-dark);
+  }
+
+  /* ---- Quote ---- */
+  .features-quote {
+    font-family: var(--font-body);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--color-tag);
+    width: 100%;
+    text-align: center;
+  }
+
+  /* =========================================
+     MOBILE
+     ========================================= */
+  @media (max-width: 768px) {
+    .features {
+      padding: 60px 20px;
+    }
+
+    .features-inner {
+      max-width: 100%;
+    }
+
+    .features-heading-wrap {
+      padding: 0 12px;
+    }
+
+    .features-heading {
+      font-size: 32px;
+    }
+
+    /* Stack cards into single column on mobile */
+    .features-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .feature-card {
+      height: 260px;
+    }
+  }
+</style>
