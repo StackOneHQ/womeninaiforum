@@ -16,7 +16,7 @@ All design tokens come from the **Women in AI Forum branding library** (Figma fi
 
 **Fonts:**
 - `--font-heading`: IBM Plex Serif (Google Fonts, weight 400) — all headings
-- `--font-ui`: Px Grotesk (local TTF in `public/fonts/`) — buttons, nav, labels, tag pills
+- `--font-ui`: Geist Medium (Google Fonts, weight 500) — buttons, nav, labels, tag pills
 - `--font-body`: Geist (Google Fonts, weights 400/500) — body text, captions
 
 **Colour naming convention:** product colours come in dark/light pairs used for text/background respectively (e.g. `--color-purple-dark` on `--color-purple-light`). The opacity scale (`--color-5` through `--color-40`) represents tints of a mid-grey.

@@ -1,24 +1,4 @@
 /* =========================================
-   FONT FACES
-   ========================================= */
-
-@font-face {
-  font-family: 'Px Grotesk';
-  src: url('/fonts/PxGrotesk-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Px Grotesk';
-  src: url('/fonts/PxGrotesk-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-/* =========================================
    DESIGN TOKENS
    ========================================= */
 
@@ -55,7 +35,7 @@
 
   /* Typography */
   --font-heading: 'IBM Plex Serif', Georgia, serif;
-  --font-ui: 'Px Grotesk', system-ui, sans-serif;
+  --font-ui: 'Geist', system-ui, sans-serif;
   --font-body: 'Geist', system-ui, sans-serif;
 
   /* Border radius */
@@ -159,7 +139,7 @@ textarea {
   font-family: var(--font-ui);
   font-size: 13px;
   line-height: 1.107;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .tag-pill__icon {
@@ -200,7 +180,7 @@ textarea {
   gap: 6px;
   border-radius: var(--radius-button);
   font-family: var(--font-ui);
-  font-weight: 400;
+  font-weight: 500;
   white-space: nowrap;
   transition: opacity 0.15s ease;
 }
@@ -277,7 +257,7 @@ textarea {
   border-radius: var(--radius-input);
   font-family: var(--font-ui);
   font-size: 15px;
-  font-weight: 400;
+  font-weight: 500;
   color: var(--color-header);
 }
 
